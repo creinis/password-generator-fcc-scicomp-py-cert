@@ -553,4 +553,37 @@ if all([constraint <= len(re.findall(pattern, password)) for constraint, pattern
             for constraint, pattern in constraints
         ):
 
+# Step 64
+
+# You don't need the count variable anymore. 
+# Delete this variable and its value.
+
+# Step 65
+
+# Now it's time to test your function. 
+# Uncomment the last two lines in your code and modify the function call passing 5 arguments. 
+# Use 8 for the length and 1 for the other four constraints.
+
+new_password = generate_password(8,1,1,1,1)
+print(new_password)
+
+# Step 66
+
+# It works, but there are still a couple of things you can improve. 
+# First of all, calling a function with 5 arguments can create confusion on which value will be assigned 
+# to which parameter.
+
+# You can call a function using keyword arguments, that is writing the parameter name explicitly followed 
+# by the assignment operator and the value. For example:
+
+def add(x, y):
+    return x + y
+
+spam(x=1, y=7) # 8
+
+# Modify your function call to use keyword arguments.
+
+new_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)
+print(new_password)
+
 
