@@ -223,5 +223,16 @@ my_tuple = ('larch', 1, True)
 
 constraints = [(nums, '')]
 
+# Step 27
+
+# The re module allows you to use regular expressions in your code. 
+# You will learn more about regular expressions very soon.
+
+# For now, add an import statement at the top of your code to import the re module.
+
+import re
+import secrets
+import string
+
 
 
