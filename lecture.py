@@ -525,4 +525,15 @@ for constraint, pattern in constraints:
 # replaced by:
     if [constraint <= len(re.findall(pattern, password)) for constraint,pattern in constraints]:
         
+# Step 62
+
+# all() is a built-in Python function that returns True if all the elements inside a given iterable 
+# evaluate to True. Otherwise, it returns False.
+
+# You can combine the all() function with the list comphehension syntax to make your code more concise.
+
+# Modify your if condition by passing the list comprehension you created in the previous step to the all() function.
+
+if all([constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints]):
+
 
