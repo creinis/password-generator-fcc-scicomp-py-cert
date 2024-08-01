@@ -457,4 +457,14 @@ for constraint, pattern in constraints:
 for constraint, pattern in constraints:
     re.findall(pattern, password)
 
+# Step 56
+
+# You are interested in the number of elements in the list returned by the findall() function.
+
+# Pass your existent findall() call to the len() function.
+
+# Check constraints
+for constraint, pattern in constraints:
+    len(re.findall(pattern, password))  
+
 
