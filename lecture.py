@@ -79,3 +79,10 @@ import random
 
 print(random.random())
 
+# Step 10
+
+# The choice() function from the random module takes a sequence and returns a random item of the sequence.
+# Modify your print() call to use the choice() function and pass all_characters as the argument.
+
+print(random.choice(all_characters))
+
