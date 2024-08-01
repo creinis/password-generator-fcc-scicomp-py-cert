@@ -325,4 +325,24 @@ constraints = [
 
 pattern = '[a-z]t'
 
+# Step 37
+
+# Now, modify the pattern in your constraint tuple to indicate the range of all digits using square brackets.
+
+# Step 38
+
+# The caret, ^, placed at the beginning of the character class, matches all the characters 
+# except those specified in the class.
+
+# Add a ^ as the first character inside your character class and see what happens.
+
+# Step 39
+
+# Add a new tuple to the constraints list. 
+# Use lowercase as the first item and a regex pattern that matches a single lowercase letter as the second item.
+
+constraints = [
+(nums, '[0-9]'),(lowercase, '[a-z]')
+]        
+
 
