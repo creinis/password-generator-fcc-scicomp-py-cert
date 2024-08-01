@@ -40,3 +40,10 @@ symbols = string.punctuation
 # These three variables constitute the possible characters to choose from when generating the password.
 # Just before them, add a comment saying Define the possible characters for the password.
 
+# Step 5
+
+# Now declare a variable named all_characters and assign it the result of concatenating your existing variables.
+
+all_characters = letters + digits + symbols
+
+
