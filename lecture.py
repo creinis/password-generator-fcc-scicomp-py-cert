@@ -449,4 +449,12 @@ constraints = [
 for constraint, pattern in constraints:
     pass    
 
+# Step 55
+
+# Inside the for loop, call the findall() function passing pattern and password as the arguments.
+
+# Check constraints
+for constraint, pattern in constraints:
+    re.findall(pattern, password)
+
 
