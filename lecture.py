@@ -505,4 +505,24 @@ for constraint, pattern in constraints:
         if count == 4:
             break
 
+# Step 61
+
+# Instead of using a loop and a counter variable, you can achieve the same result with a different approach.
+
+# Replace your existing for loop and two if statements with a single if statement. 
+# For the if condition, use a list created with the list comprehension syntax.
+
+# The list stores the results of evaluating the expression 
+# constraint <= len(re.findall(pattern, password)) for each constraint-pattern tuple in the constraints list.
+
+# The code for the existing for loop and two if statements
+for constraint, pattern in constraints:
+    if constraint <= len(re.findall(pattern, password)):
+        count += 1
+            
+    if count == 4:
+
+# replaced by:
+    if [constraint <= len(re.findall(pattern, password)) for constraint,pattern in constraints]:
+        
 
