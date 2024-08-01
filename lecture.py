@@ -298,4 +298,22 @@ print(re.search(pattern, quote))
 
 print(re.findall(pattern, quote))
 
+# Step 34
+
+# A character class is indicated by square brackets and matches one character among those specified 
+# between the brackets. For example, ma[dnt] matches either mad, man, or mat.
+
+# Modify your pattern to match a w followed by either h or a.
+
+# Step 35
+
+# Now, turn the empty string in the constraint tuple into a regex pattern to match a single digit. 
+# Use a character class specifying each digit from 0 to 9.
+
+constraints = [
+    (nums, '[0123456789]')
+]  
+
+
+
 
