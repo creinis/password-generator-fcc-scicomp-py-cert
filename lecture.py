@@ -314,6 +314,15 @@ constraints = [
     (nums, '[0123456789]')
 ]  
 
+# Step 36
 
+# Character classes also allow you to indicate a range of characters to match. 
+# You need to specify the starting and the ending characters separated by an hyphen, -. 
+# Characters follow the Unicode order.
+
+# Modify your pattern variable to match any letter t preceded by a lowercase letter in the quote variable. 
+# Use the range of characters from a to z for that.
+
+pattern = '[a-z]t'
 
 
