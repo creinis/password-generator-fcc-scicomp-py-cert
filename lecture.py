@@ -259,4 +259,43 @@ pattern = re.compile('i')
 quote = 'Not all those who wander are lost.'
 print(pattern.search(quote))
 
+# Step 30
+
+# The value None is returned since i is not found inside the parsed string.
+# Now, modify your pattern into l and see the result.
+
+# Step 31
+
+# As you can see from the output, now your regex matches the first l inside the string.
+
+# In your pattern, you can add a quantifier after a character to specify how many times that character 
+# should be repeated. For example, the + quantifier means it should repeat one or more times.
+
+# Add a + quantifier to your pattern.
+
+pattern = re.compile('l+')
+
+# Step 32
+
+# You can obtain the same result without using the compile() function. 
+# Modify your pattern variable into the literal string l+. 
+# Then, change the print() call to print re.search(pattern, quote).
+
+# To write a literal string that includes the characters "l+" in Python, 
+# you can use single or double quotes to define the string
+
+pattern = 'l+'
+quote = 'Not all those who wander are lost.'
+print(re.search(pattern, quote))
+
+# Step 33
+
+# To check that the generated password meets the required features, 
+# you are going to use the findall() function from the re module. 
+# It's similar to search but it returns a list with all the occurrences of the matched pattern.
+
+# Replace the search() call with findall() and check the output.
+
+print(re.findall(pattern, quote))
+
 
