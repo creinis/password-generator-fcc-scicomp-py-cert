@@ -536,4 +536,21 @@ for constraint, pattern in constraints:
 
 if all([constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints]):
 
+# Step 63
+
+# Having all([expression for i in iterable]), means that a new list is created by evaluating expression 
+# for each i in iterable. After the all() function iterates over the newly created list, 
+# the list is deleted automatically, since it is no longer needed.
+
+# Memory can be saved by using a generator expression. 
+# Generator expressions follow the syntax of list comprehensions but they use parentheses instead of 
+# square brackets.
+
+# Change your list comprehension into a generator expression by removing the square brackets.
+
+        if all(
+            constraint <= len(re.findall(pattern, password))
+            for constraint, pattern in constraints
+        ):
+
 
