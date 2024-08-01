@@ -148,4 +148,16 @@ password = ''
 for i in range(length):
     password += secrets.choice(all_characters)
 
+# Step 18
+
+# A standalone single underscore is used to represent a value you don't care or that won't be used in your code. 
+# Your iteration variable is not actually used.
+
+# Modify your i variable into a single underscore.
+
+password = ''
+# Generate password
+for _ in range(length):
+    password += secrets.choice(all_characters)
+
 
