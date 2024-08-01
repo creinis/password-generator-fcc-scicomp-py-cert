@@ -364,4 +364,25 @@ constraints = [
 
 pattern = '.+'
 
+# Step 43
+
+# If you need to match a character that has a special meaning in the pattern, such as . or +, 
+# you can escape it by prepending a backslash character, \. 
+# For example, this matches a literal plus sign: \+.
+
+# Modify pattern so that it matches a single literal dot.
+
+# Step 44
+
+# Python provides a particular type of string called raw string. 
+# Raw strings are prefixed with a r. 
+# The key distinction from regular strings lies in how they handle the backslash character: 
+# in raw strings, backslashes are treated as literal characters rather than escape characters. 
+# When writing regular expressions, using raw strings is a good practice, since they can usually 
+# contain a lot of \ characters.
+
+# Turn your pattern string into a raw string by prefixing it with a r.
+
+pattern = r'\.'
+
 
