@@ -436,5 +436,17 @@ constraints = [
 
 [(special_chars, fr'[{symbols}]')]
 
+# Step 53
+
+# Below the constraints list, add a comment saying Check constraints.
+
+# Step 54
+
+# After your new comment, write a for loop to iterate over the constraints list. 
+# Use constraint and pattern as the iterating variables.
+
+# Check constraints
+for constraint, pattern in constraints:
+    pass    
 
 
