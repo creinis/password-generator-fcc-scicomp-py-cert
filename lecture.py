@@ -170,4 +170,24 @@ for _ in range(length):
 
 new_password = generate_password(8)
 
+# Step 21
 
+# Check the result by printing your new variable.
+
+# Step 22
+
+# It seems all fine, but it would be nice to have a way to check that the generated password complies 
+# to specific features. For example, a minimum number of special characters, digits, 
+# or uppercase/lowercase letters. You are going to take care of that very soon.
+
+# For now, comment out the last two lines of your code.
+
+# Step 23
+
+# Next, you are going to give your function more parameters that will act as constraints for 
+# the generated password.
+
+# Modify your function declaration by adding nums, special_chars, uppercase, 
+# and lowercase in this order after the existent length parameter.
+
+def generate_password(length, nums, special_chars, uppercase, lowercase):
