@@ -247,4 +247,16 @@ import string
 
 pattern = re.compile('i')
 
+# Step 29
+
+# The search() function from the re module analyzes the string passed as the argument looking for the 
+# first place where the regex pattern matches the string.
+
+# Declare a variable called quote and assign the string Not all those who wander are lost. to this variable. 
+# Then, print the result of pattern.search(quote).
+
+pattern = re.compile('i')
+quote = 'Not all those who wander are lost.'
+print(pattern.search(quote))
+
 
