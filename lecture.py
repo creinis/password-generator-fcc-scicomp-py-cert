@@ -476,4 +476,21 @@ for constraint, pattern in constraints:
 for constraint, pattern in constraints:
     constraint <= len(re.findall(pattern, password))
 
+# Step 58
+
+# Right before your for loop, declare a count variable and assign the value zero to this variable.
+
+# Step 59
+
+#Turn the expression inside your for loop into an if statement. 
+# Use the expression you wrote in the previous step as the if condition. Inside the new conditional statement, 
+# increment the count value by 1.
+
+# Check constraints
+count = 0
+for constraint, pattern in constraints:
+    if constraint <= len(re.findall(pattern, password)):
+        count += 1
+
+
 
