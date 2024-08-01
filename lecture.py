@@ -46,4 +46,18 @@ symbols = string.punctuation
 
 all_characters = letters + digits + symbols
 
+# Step 6
+
+#Your all_characters variable is a string formed by all lowercase and uppercase letters, 
+# all the 10 digits and several special characters.
+
+#Just before it, add a comment saying Combine all characters.
+
+# Step 7
+
+# Now print the all_characters variable to see what it looks like.
+
+print(all_characters)
+# Output: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
 
