@@ -357,3 +357,11 @@ constraints = [
     (special_chars, '')
 ]        
 
+# Step 42
+
+# The dot character is a wildcard that matches any character in a string — except for a newline character 
+# by default. Modify pattern to match the entire string. Use a . followed by the + quantifier.
+
+pattern = '.+'
+
+
