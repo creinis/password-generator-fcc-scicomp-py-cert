@@ -202,3 +202,26 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         # Generate password
         for _ in range(length):
             password += secrets.choice(all_characters)
+
+# Step 25
+
+# After your for loop, create a constraints variable and assign an empty list to this variable.
+
+# Step 26
+
+# A tuple is another built-in data structure in Python. 
+# Tuples are very much like lists, but they are defined with parentheses (), 
+# instead of square brackets. Also, tuples are immutable, unlike lists.
+
+my_tuple = ('larch', 1, True)
+
+# Your constraints list is going to store tuples. 
+# The first item of each tuple will be a constraint parameter.
+
+# Add a tuple to your list. 
+# Use nums as the first item and an empty string as the second item.
+
+constraints = [(nums, '')]
+
+
+
