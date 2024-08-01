@@ -191,3 +191,4 @@ new_password = generate_password(8)
 # and lowercase in this order after the existent length parameter.
 
 def generate_password(length, nums, special_chars, uppercase, lowercase):
+
