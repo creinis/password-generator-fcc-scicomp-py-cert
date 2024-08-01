@@ -160,4 +160,14 @@ password = ''
 for _ in range(length):
     password += secrets.choice(all_characters)
 
+# Step 19
+
+# After the loop, add a return statement to your function so it returns the password variable.
+
+# Step 20
+
+# Finally, call the generate_password function with 8 as the argument and assign the function call to a new_password variable.
+
+new_password = generate_password(8)
+
 
