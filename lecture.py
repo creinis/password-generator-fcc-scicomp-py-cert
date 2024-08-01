@@ -413,5 +413,28 @@ constraints = [
     (special_chars, r'[^a-zA-Z0-9]')
 ]    
 
+# Step 48
+
+# In the same way the [0-9] class is equivalent to \d, the [^0-9] class is equivalent to \D. 
+# Alphanumeric characters can be matched with \w and non-alphanumeric characters can be matched with \W.
+
+# Replace the [^a-zA-Z0-9] character class with \W.
+
+# Step 51
+
+# Since the underscore character is a valid character for variable names, it is included in the \w character class (equivalent to [a-zA-Z0-9_]), 
+# which can be conveniently used to match variable names.
+
+# Therefore, the \W character class is equivalent to [^a-zA-Z0-9_] with the underscore character that is 
+# not matched. For this reason you cannot use it to match all your special characters.
+# Delete the last three lines in your code.
+
+# Step 52
+
+# Now, combine your raw string with an f-string and interpolate your symbols variable inside the character class. 
+# Remember that you can interpolate a variable within an f-string using curly brackets { }.
+
+[(special_chars, fr'[{symbols}]')]
+
 
 
